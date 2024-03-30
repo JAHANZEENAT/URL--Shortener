@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body align = center>
+    <div>
+        <form method="POST" action="/login">
+            <label>Email : </label>
+            <input type="text" name = "email" placeholder="Enter your name" required><br><br>
+            <label>Password : </label>
+            <input type="text" name = "password" placeholder="Enter your name" required><br><br>
+            <button type="submit">Log in</button>
+        </form>
+        <% if (locals.msg) { %>
+            <p><%= msg %></p>
+           <% } %>
+    </div>
+</body>
+</html>
